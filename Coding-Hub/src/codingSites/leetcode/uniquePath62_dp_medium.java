@@ -1,7 +1,7 @@
 package codingSites.leetcode;
 
 // https://leetcode.com/problems/unique-paths/
-public class uniquePath62_dp_medium {
+public class UniquePath62_DP_Medium {
     public int uniquePaths(int m, int n) {
         
         if(m == 1 || n == 1) {

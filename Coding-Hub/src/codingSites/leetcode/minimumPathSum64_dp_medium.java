@@ -2,7 +2,7 @@ package codingSites.leetcode;
 
 // problem Link - https://leetcode.com/problems/minimum-path-sum/
 
-public class minimumPathSum64_dp_medium {
+public class MinimumPathSum64_DP_Medium {
 
     public int minPathSum(int[][] grid) {
         int rows = grid.length;
