@@ -17,7 +17,7 @@ package codingSites.educative.dp;
     Explanation: The given set cannot be partitioned into two subsets with equal sum.
 */
 
-public class PartitionSet {
+public class PartitionSetRecursive {
     /*
      * Algorightm -  
      * for each number 'i' create a new set which INCLUDES number 'i' if
@@ -67,7 +67,7 @@ public class PartitionSet {
     }
 
     public static void main(String[] args) {
-        PartitionSet ps = new PartitionSet();
+        PartitionSetRecursive ps = new PartitionSetRecursive();
         int[] num = { 1, 2, 3, 4 };
         System.out.println(ps.canPartition(num));
         num = new int[] { 1, 1, 3, 4, 7 };

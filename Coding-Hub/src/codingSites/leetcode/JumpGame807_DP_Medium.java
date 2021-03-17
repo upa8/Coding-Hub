@@ -1,7 +1,19 @@
 package codingSites.leetcode;
 
 public class JumpGame807_DP_Medium {
+    // Problem Link - https://leetcode.com/explore/interview/card/top-interview-questions-medium/111/dynamic-programming/807/
+    // Video - https://youtu.be/Zb4eRjuPHbM
     public static boolean canJump(int[] nums) {
+        int lastGoodIndexPosition = nums.length -1;
+        
+        for(int index = nums.length -1 ; index >= 0; index--){
+            if(index + nums[index] >= lastGoodIndexPosition) {
+                lastGoodIndexPosition = index;
+            }
+        }
+        return lastGoodIndexPosition == 0;
+    }
+    public static boolean canJumpI(int[] nums) {
         int rows = nums.length - 1;
         
         if(rows == 0) {
